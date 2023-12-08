@@ -1,0 +1,57 @@
+**********************
+MY first project in react 
+creating all using components 
+header component 
+menu component 
+footer component
+
+
+************************************
+before we had one file for html and 1 file for css and 1 file for javascript
+
+as file become more interactive web page started becomeing single page application 
+
+react component is one component per file compared to traditional one technology per file .
+
+react component has html and css and javascript
+
+***************************************
+
+props are used to transfer data from parent components to child components
+
+props are essential tools to configure and custiomize the react component(like function parameters)
+
+props help that parent components can control what child components shuld be like 
+
+Anything can be passesd in props single values arrays , objects functions and even other components
+******************************************************************************
+
+Props are immutable 
+
+if u need to mutate props you actually need state 
+
+React uses one way data flow means that in react application data can oly from parent to child and never the opposite way not the opposite way unlike angular which uses the two way data flow 
+
+this makes application more prdectiable and easier to understand
+
+It is more performant 
+
+Makes application easier to debug 
+as we have more control over the data
+
+******************************************************************************
+
+Rules of JSX
+JSX works essentially like Html but we can enter javascript mode by using {}
+
+statements are not allowed in JSX(if/else,for,switch)
+
+JSX produces javascript expression
+const el = <h1>Hello world </h1>;
+is same as
+const el= React.createElement("h1",null,"Hello world");
+
+note 
+1> WE can place other peices of JSX in {}
+2> We can write JSX anywhere inside the component 
+3> A peice of JSX can only have one root element . IF you want more , use <React.fragment></React.fragment> or the short <></> 
